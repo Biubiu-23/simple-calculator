@@ -107,6 +107,7 @@
     <div>
         <button onclick="calculate()">计算</button>
         <button onclick="clearHistory()">清除历史</button>
+        <button onclick="clearInputs()">清除输入</button> <!-- 新增的清除输入按钮 -->
     </div>
     
     <div class="result" id="result"></div>
@@ -178,6 +179,14 @@
         function clearHistory() {
             localStorage.removeItem('calcHistory');
             document.getElementById('history').innerHTML = '';
+        }
+
+        // 清除输入框内容的函数
+        function clearInputs() {
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('num3').value = '';
+            document.getElementById('result').innerText = ''; // 清除结果显示
         }
 
         function closePopup() {
