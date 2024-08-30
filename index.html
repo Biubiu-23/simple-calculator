@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>为妈妈定制的简单计算器</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -96,10 +97,18 @@
             border-radius: 8px;
             cursor: pointer;
         }
+        .heart {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
     <h1 class="customized-for-mom">为妈妈定制的简单计算器</h1>
+    <div class="heart">
+        <i class="fa-solid fa-heart"></i> <!-- Font Awesome 爱心图标 -->
+    </div>
     <p>输入三个数字：</p>
     <input type="number" id="num1" placeholder="数字1">
     <input type="number" id="num2" placeholder="数字2">
